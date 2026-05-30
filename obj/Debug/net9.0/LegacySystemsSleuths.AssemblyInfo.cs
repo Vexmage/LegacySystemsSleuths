@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LegacySystemsSleuths")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbb45cdabeca328387f0e2820649e62b07298af3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bf5ea036539e990749deb96c13b53a6ad2ad539")]
 [assembly: System.Reflection.AssemblyProductAttribute("LegacySystemsSleuths")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LegacySystemsSleuths")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,18 @@
+@using LegacySystemsSleuths.Models
+
+<div class="card sleuth-card h-100">
+    <div class="card-body">
+        <h3 class="h5">@Service.Title</h3>
+        <p>@Service.Description</p>
+        <ul>
+            @foreach (var bullet in Service.Bullets)
+            {
+                <li>@bullet</li>
+            }
+        </ul>
+    </div>
+</div>
+
+@code {
+    [Parameter] public required ServiceOffering Service { get; set; }
+}

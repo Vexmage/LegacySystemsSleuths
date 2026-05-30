@@ -1,0 +1,11 @@
+@using LegacySystemsSleuths.Models
+
+<div class="process-step">
+    <div class="step-number">@Step.Number</div>
+    <h3>@Step.Title</h3>
+    <p>@Step.Description</p>
+</div>
+
+@code {
+    [Parameter] public required ProcessStepModel Step { get; set; }
+}

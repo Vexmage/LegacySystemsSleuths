@@ -1,0 +1,28 @@
+@using LegacySystemsSleuths.Models
+
+<div class="card case-file h-100">
+    <div class="card-body">
+        <span class="badge severity-badge">@CaseFile.Severity</span>
+        <h3 class="h5 mt-3">@CaseFile.Title</h3>
+
+        <h4 class="h6 mt-3">Symptoms</h4>
+        <ul>
+            @foreach (var symptom in CaseFile.Symptoms)
+            {
+                <li>@symptom</li>
+            }
+        </ul>
+
+        <h4 class="h6 mt-3">Outcome</h4>
+        <ul>
+            @foreach (var outcome in CaseFile.Outcomes)
+            {
+                <li>@outcome</li>
+            }
+        </ul>
+    </div>
+</div>
+
+@code {
+    [Parameter] public required CaseFile CaseFile { get; set; }
+}

@@ -44,6 +44,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/namxe/Documents/Devel/LegacySystemsSleuths/LegacySystemsSleuths/Components/Shared/CaseFileCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcQ2FzZUZpbGVDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/namxe/Documents/Devel/LegacySystemsSleuths/LegacySystemsSleuths/Components/Shared/ContactForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcQ29udGFjdEZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/namxe/Documents/Devel/LegacySystemsSleuths/LegacySystemsSleuths/Components/Shared/HeroSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcSGVyb1NlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/namxe/Documents/Devel/LegacySystemsSleuths/LegacySystemsSleuths/Components/Shared/ProcessStep.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcUHJvY2Vzc1N0ZXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/namxe/Documents/Devel/LegacySystemsSleuths/LegacySystemsSleuths/Components/Shared/ServiceCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcU2VydmljZUNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/namxe/Documents/Devel/LegacySystemsSleuths/LegacySystemsSleuths/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

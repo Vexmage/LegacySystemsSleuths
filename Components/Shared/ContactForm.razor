@@ -1,0 +1,70 @@
+<EditForm Model="_form" OnValidSubmit="HandleSubmit">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label class="form-label">Organization Name</label>
+            <InputText class="form-control" @bind-Value="_form.OrganizationName" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Contact Name</label>
+            <InputText class="form-control" @bind-Value="_form.ContactName" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <InputText class="form-control" @bind-Value="_form.Email" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Urgency</label>
+            <InputSelect class="form-select" @bind-Value="_form.Urgency">
+                <option>Mild Curiosity</option>
+                <option>Suspicious</option>
+                <option>Concerning</option>
+                <option>Technically Haunted</option>
+                <option>Call Us Immediately</option>
+            </InputSelect>
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">What seems to be happening?</label>
+            <InputTextArea class="form-control" rows="4" placeholder="Please describe the mystery." @bind-Value="_form.Description" />
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">What have you already tried?</label>
+            <InputTextArea class="form-control" rows="3" placeholder="Reboots, rituals, DNS changes, stern emails, etc." @bind-Value="_form.Attempts" />
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-gold" type="submit">Submit Case File</button>
+        </div>
+    </div>
+</EditForm>
+
+@if (_submitted)
+{
+    <div class="alert alert-success mt-4">
+        Case file received. A sleuth would inspect the clues shortly, assuming this were a real agency.
+    </div>
+}
+
+@code {
+    private IntakeForm _form = new();
+    private bool _submitted;
+
+    private void HandleSubmit()
+    {
+        _submitted = true;
+    }
+
+    private class IntakeForm
+    {
+        public string OrganizationName { get; set; } = "";
+        public string ContactName { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Urgency { get; set; } = "Suspicious";
+        public string Description { get; set; } = "";
+        public string Attempts { get; set; } = "";
+    }
+}
