@@ -1,7 +1,59 @@
 ﻿@page "/"
+@using LegacySystemsSleuths.Data
+@using LegacySystemsSleuths.Components.Shared
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Legacy Systems Sleuths</PageTitle>
 
-<h1>Hello, world!</h1>
+<HeroSection />
 
-Welcome to your new app.
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <p class="eyebrow">Services</p>
+            <h2>Technical archaeology for real-world systems</h2>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var service in SiteContent.Services.Take(3))
+            {
+                <div class="col-md-4">
+                    <ServiceCard Service="service" />
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="section section-paper">
+    <div class="container">
+        <div class="section-heading">
+            <p class="eyebrow">Case Files</p>
+            <h2>Recent fictional investigations</h2>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var caseFile in SiteContent.CaseFiles.Take(3))
+            {
+                <div class="col-md-4">
+                    <CaseFileCard CaseFile="caseFile" />
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="section counters">
+    <div class="container">
+        <div class="row g-4">
+            @foreach (var counter in SiteContent.Counters)
+            {
+                <div class="col-md-3">
+                    <div class="counter-card">
+                        <strong>@counter.Count</strong>
+                        <span>@counter.Label</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

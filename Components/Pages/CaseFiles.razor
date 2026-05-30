@@ -1,0 +1,26 @@
+@page "/case-files"
+@using LegacySystemsSleuths.Data
+@using LegacySystemsSleuths.Components.Shared
+
+<PageTitle>Case Files | Legacy Systems Sleuths</PageTitle>
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">Case Files</p>
+        <h1>Strange but plausible technical mysteries.</h1>
+        <p>These fictional cases represent the kind of messy, inherited systems real organizations face.</p>
+    </div>
+</section>
+
+<section class="section section-paper">
+    <div class="container">
+        <div class="row g-4">
+            @foreach (var caseFile in SiteContent.CaseFiles)
+            {
+                <div class="col-md-6">
+                    <CaseFileCard CaseFile="caseFile" />
+                </div>
+            }
+        </div>
+    </div>
+</section>

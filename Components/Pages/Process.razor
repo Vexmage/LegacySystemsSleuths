@@ -1,0 +1,24 @@
+@page "/process"
+@using LegacySystemsSleuths.Data
+@using LegacySystemsSleuths.Components.Shared
+
+<PageTitle>Process | Legacy Systems Sleuths</PageTitle>
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">Process</p>
+        <h1>Understand first. Modernize second.</h1>
+        <p>Good consulting does not begin with “just rebuild it.” It begins with finding out what is actually going on.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="process-grid">
+            @foreach (var step in SiteContent.ProcessSteps)
+            {
+                <ProcessStep Step="step" />
+            }
+        </div>
+    </div>
+</section>

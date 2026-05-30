@@ -1,0 +1,26 @@
+@page "/services"
+@using LegacySystemsSleuths.Data
+@using LegacySystemsSleuths.Components.Shared
+
+<PageTitle>Services | Legacy Systems Sleuths</PageTitle>
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">Services</p>
+        <h1>When the system is mysterious, start with investigation.</h1>
+        <p>We help organizations understand what they have before deciding what to change.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row g-4">
+            @foreach (var service in SiteContent.Services)
+            {
+                <div class="col-md-6">
+                    <ServiceCard Service="service" />
+                </div>
+            }
+        </div>
+    </div>
+</section>
